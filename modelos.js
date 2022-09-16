@@ -5,6 +5,8 @@ const usuarios = [
     {id: 4, nome: 'Maria', bonus: 1000},
 ]
 const result = usuarios.filter(usuario => {
-    return usuario.bonus >= 690;
+    return usuario.bonus >= 500;
 })
 console.log(result);
+
+document.getElementById("model").innerHTML = `Quantidade de registro: ${result.length}`;
